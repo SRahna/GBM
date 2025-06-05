@@ -161,7 +161,7 @@ import pandas as pd
 exact_placeholder = None  # Placeholder if exact LP not required for now
 results = []
 
-for n_basis in [20, 25]:
+for n_basis in [20]:
     approx_val = solve_approx_lp(n_basis)
     results.append((n_basis, approx_val))
     print(approx_val)
